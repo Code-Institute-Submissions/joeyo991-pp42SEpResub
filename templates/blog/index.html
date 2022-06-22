@@ -10,6 +10,7 @@
             </div>
         </div>
         <div class="col-md-8">
+            {% for post in posts %}
             <div class="card shadow my-3">
                 <div class="card-body">
                     <div class="row">
@@ -17,69 +18,16 @@
                             <img src="" alt="image">
                         </div>
                         <div class="col-md-8">
-                            <small>20 June 2022</small>
+                            <small>{{ post.date_created }}</small>
                             <hr>
-                            <a class="h3" href="">First Blog Post</a>
-                            <p class="text-justify my-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis exercitationem inventore, quibusdam saepe sint nam. Veritatis id vero cum ipsa porro quaerat, officiis facere hic. Laborum reprehenderit nisi aspernatur non.
-                            </p>
+                            <a class="h3" href="">{{ post.title }}</a>
+                            <p class="text-justify my-3">{{ post.content }}</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card shadow my-3">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="" alt="image">
-                        </div>
-                        <div class="col-md-8">
-                            <small>20 June 2022</small>
-                            <hr>
-                            <a class="h3" href="">First Blog Post</a>
-                            <p class="text-justify my-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis exercitationem inventore, quibusdam saepe sint nam. Veritatis id vero cum ipsa porro quaerat, officiis facere hic. Laborum reprehenderit nisi aspernatur non.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card shadow my-3">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="" alt="image">
-                        </div>
-                        <div class="col-md-8">
-                            <small>20 June 2022</small>
-                            <hr>
-                            <a class="h3" href="">First Blog Post</a>
-                            <p class="text-justify my-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis exercitationem inventore, quibusdam saepe sint nam. Veritatis id vero cum ipsa porro quaerat, officiis facere hic. Laborum reprehenderit nisi aspernatur non.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card shadow my-3">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="" alt="image">
-                        </div>
-                        <div class="col-md-8">
-                            <small>20 June 2022</small>
-                            <hr>
-                            <a class="h3" href="">First Blog Post</a>
-                            <p class="text-justify my-3">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis exercitationem inventore, quibusdam saepe sint nam. Veritatis id vero cum ipsa porro quaerat, officiis facere hic. Laborum reprehenderit nisi aspernatur non.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
-        
     </div>
 </div>
 {% endblock %}
