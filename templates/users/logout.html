@@ -1,5 +1,5 @@
 {% extends 'partials/base.html' %}
-{% block title %}Sign Up{% endblock %}
+{% block title %}Logout{% endblock %}
 {% load crispy_forms_tags %}
 {% block content %}
 <div class="container">
@@ -7,13 +7,12 @@
         <div class="col-md-6 offset-md-3">
             <div class="card my-3 shadow">
                 <div class="card-body">
-                    <h4>Sign Up Now!</h4>
+                    <h4>Logout?</h4>
                     <hr>
-                    <form method="POST">
-                        {% csrf_token %}
-                        {{ form|crispy }}
-                        <input class="btn btn-primary btn-block" type="submit" value="Sign Up">
-                    </form>
+                    <div class="alert alert-info">
+                        You have been Logged Out!
+                    </div>
+                    <a href="">Login!</a>
                 </div>
             </div>
         </div>
