@@ -23,12 +23,19 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="" alt="image">
+                            {% if "placeholder" in post.author.profilemodel.image.url %}
+                            <img class="img-thumbnail"
+                                src="https://cdn.pixabay.com/photo/2013/07/13/12/07/avatar-159236_960_720.png"
+                                alt="profile picture">
+                            {% else %}
+                            <img class="img-thumbnail" src="{{ post.author.profilemodel.image.url }}"
+                                alt="Users picture">
+                            {% endif %}
                         </div>
                         <div class="col-md-8">
                             <small>{{ post.date_created }}</small>
                             <hr>
-                            <a class="h3" href="">{{ post.title }}</a>
+                            <a class="h3" href="{% url 'blog-post-detail' post.id %}">{{ post.title }}</a>
                             <p class="text-justify my-3">{{ post.content }}</p>
                         </div>
                     </div>
