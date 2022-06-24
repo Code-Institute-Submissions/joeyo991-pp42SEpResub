@@ -1,3 +1,6 @@
-body {
-    background-color: red;
+.cover {
+    background: url('https://www.incimages.com/uploaded_files/image/1920x1080/getty_522390562_274931.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
 }
