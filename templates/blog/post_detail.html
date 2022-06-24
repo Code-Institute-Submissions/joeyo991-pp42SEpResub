@@ -20,9 +20,11 @@
                         </div>
                         <div class="col-md-8">
                             <small>{{ post.date_created }}</small>
+                            {% if post.author == request.user %}
                             <span><a class="btn btn-danger btn-sm float-right" href="{% url 'blog-post-delete' post.id %}">Delete</a></span>
                             <span><a class="btn btn-primary btn-sm float-right mx-2"
                                     href="{% url 'blog-post-edit' post.id %}">Edit</a></span>
+                            {% endif %}
                             <hr>
                             <h4>{{ post.title }}</h4>
                             <p>

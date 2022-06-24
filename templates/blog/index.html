@@ -33,10 +33,11 @@
                             {% endif %}
                         </div>
                         <div class="col-md-8">
-                            <small>{{ post.date_created }}</small>
+                            <h3>{{ post.author }}</h3>
                             <hr>
-                            <a class="h3" href="{% url 'blog-post-detail' post.id %}">{{ post.title }}</a>
+                            <a class="h4" href="{% url 'blog-post-detail' post.id %}">{{ post.title }}</a>
                             <p class="text-justify my-3">{{ post.content }}</p>
+                            <small>{{ post.date_created }}</small>
                         </div>
                     </div>
                 </div>
