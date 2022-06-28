@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from .forms import SignUpForm, UserUpdateForm, ProfileUpdateForm
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
@@ -18,7 +19,7 @@ def sign_up(request):
     }
     return render(request, 'users/sign_up.html', context)
 
-
+@login_required
 def profile(request):
     if request.method == 'POST':
         # User Update Form

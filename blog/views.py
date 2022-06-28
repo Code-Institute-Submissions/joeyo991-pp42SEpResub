@@ -24,7 +24,7 @@ def index(request):
 
     return render(request, 'blog/index.html', context)
 
-
+@login_required
 def post_detail(request, pk):
     post = PostModel.objects.get(id=pk)
     if request.method == 'POST':
@@ -43,7 +43,7 @@ def post_detail(request, pk):
     }
     return render(request, 'blog/post_detail.html', context)
 
-
+@login_required
 def post_edit(request, pk):
     post = PostModel.objects.get(id=pk)
     if request.method == 'POST':
@@ -59,7 +59,7 @@ def post_edit(request, pk):
     }
     return render(request, 'blog/post_edit.html', context)
 
-
+@login_required
 def post_delete(request, pk):
     post = PostModel.objects.get(id=pk)
     if request.method == 'POST':
