@@ -153,4 +153,3 @@ LOGIN_REDIRECT_URL = 'blog-index'
 # Users must log in to access the site
 LOGIN_URL = 'users-login'
 
-
