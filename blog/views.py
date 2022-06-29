@@ -5,7 +5,8 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
-@login_required
+# The home page view
+@login_required # Makes sure the user is logged in
 def index(request):
     posts = PostModel.objects.all() 
     if request.method == 'POST':
@@ -24,6 +25,7 @@ def index(request):
 
     return render(request, 'blog/index.html', context)
 
+# The post detial view
 @login_required
 def post_detail(request, pk):
     post = PostModel.objects.get(id=pk)
@@ -43,6 +45,7 @@ def post_detail(request, pk):
     }
     return render(request, 'blog/post_detail.html', context)
 
+# The edit post view
 @login_required
 def post_edit(request, pk):
     post = PostModel.objects.get(id=pk)
@@ -59,6 +62,7 @@ def post_edit(request, pk):
     }
     return render(request, 'blog/post_edit.html', context)
 
+# The post delete view
 @login_required
 def post_delete(request, pk):
     post = PostModel.objects.get(id=pk)

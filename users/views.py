@@ -5,7 +5,7 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
-
+# User sign up
 def sign_up(request):
     if request.method == 'POST': 
         form = SignUpForm(request.POST)
@@ -19,7 +19,8 @@ def sign_up(request):
     }
     return render(request, 'users/sign_up.html', context)
 
-@login_required
+# The profile view
+@login_required # Makes sure user is logged in
 def profile(request):
     if request.method == 'POST':
         # User Update Form

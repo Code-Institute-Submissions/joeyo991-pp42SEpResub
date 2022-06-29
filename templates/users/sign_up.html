@@ -2,6 +2,7 @@
 {% block title %}Sign Up{% endblock %}
 {% load crispy_forms_tags %}
 {% block content %}
+<!-- The sign up Page -->
 <div class="cover">
     <div class="container">
         <div class="row mt-5 pt-3">
@@ -9,6 +10,7 @@
                 <div class="card my-3 shadow">
                     <div class="card-body">
                         <h4>Sign Up Now!</h4>
+                        <p>RightRecovery is the social blog site for people in recovery</p>
                         <hr>
                         <form method="POST">
                             {% csrf_token %}
