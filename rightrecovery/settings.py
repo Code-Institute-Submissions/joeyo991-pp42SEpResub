@@ -28,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['rightrecovery.herokuapp.com', 'localhost']
 
@@ -152,4 +152,3 @@ LOGIN_REDIRECT_URL = 'blog-index'
 
 # Users must log in to access the site
 LOGIN_URL = 'users-login'
-
