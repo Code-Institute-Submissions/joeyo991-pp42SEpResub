@@ -161,3 +161,23 @@ When the user clicks the Logout button in the navbar, they are redirected to the
 
 ![Logged Out Page](/readme-images/logged-out.png)
 
+## Future Improvements and Features
+
+**Friends Lists**
+
+In the future I think it could be a good idea to create friends lists so that people can interact with people they have met on the site or that they know already. The only problem with this is that as it is a recovery based site, many people may want to remain anonymous.
+
+**Messaging**
+
+In the future I would like to allow users to message eachother rather than just communicationg through comments on a post.
+
+**Password Reset**
+
+In the future I would like to add the option for the user to reset their password for security reasons or if they have forgotten theirs.
+
+**Comment Deletion**
+
+In the future it may be a good idea for users to have the option to delete a comment that someone has left on their post that they don't like or is unhelpful.
+
+## **Design**
+

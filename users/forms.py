@@ -5,7 +5,7 @@ from django import forms
 
 # The sign up form
 class SignUpForm(UserCreationForm):
-    email = forms.EmailField()
+    email = forms.EmailField(required=False)
 
     class Meta:
         model = User
