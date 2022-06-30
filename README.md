@@ -32,7 +32,7 @@ People in recovery from addiction or mental health problems.
 - As a frequent visitor, I want to be able to update my picture on the app.
 - As a frequent visitor, I want to be able to upload a post.
 - As a frequent visitor, I want to be able to comment on other users' posts.
-- As a frequent visitor, I want to be abale to view the comments on mine and other users' posts.
+- As a frequent visitor, I want to be able to view the comments on mine and other users' posts.
 
 ## **Technologies Used**
 ### **Languages:**
@@ -202,6 +202,26 @@ I used the following image as a background for the Login and Sign Up pages as I 
 ![Background Image](/readme-images/rr-img.jpg)
 
 ## **Testing**
+
+### **Testing User Stories**
+
+| First Time Visitor Goals | Requirement met |
+| ------------------------- | --------------- |
+| As a first time visitor, I want to easily be able to navigate to the sign up page. | Yes |
+| As a first time visitor, I want to easily be able to create an account. | Yes |
+| As a first time visitor, I want to easily be able to navigate through the site. | Yes |
+| As a first time visitor, I want to be able to understand why this app might appeal to me. | Yes |
+
+| Frequent Visitor Goals | Requirement met |
+| ----------------------- | --------------- |
+| As a frequent visitor, I want to be able to log into my account, so that I can have a personal account. | Yes |
+| As a frequent visitor, I want to be able to easily navigate through the app so that I can find the content I am looking for. | Yes |
+| As a frequent visitor, I want to be able to log in and out of my account. | Yes |
+| As a frequent visitor, I want to be able to update my personal data so that I can keep my account up to date. | Yes |
+| As a frequent visitor, I want to be able to update my picture on the app. | Yes |
+| As a frequent visitor, I want to be able to upload a post. | Yes |
+| As a frequent visitor, I want to be able to comment on other users' posts. | Yes |
+| As a frequent visitor, I want to be able to view the comments on mine and other users' posts. | Yes |
 
 ### **HTML Validation**
 
