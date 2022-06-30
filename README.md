@@ -217,6 +217,76 @@ I used the following image as a background for the Login and Sign Up pages as I 
 
 ![CSS Validation Results](/readme-images/css-validation.png)
 
+### **Python Validation**
+
+- No errors were found when the code was passed through Valentin Bryukhanov's [online validation tool](http://pep8online.com/). According to the reports, the code is [Pep 8-compliant](https://legacy.python.org/dev/peps/pep-0008/). This checking was done manually by copying python code from all the files and pasting it into the validator.
+
+### **blog app**
+
+**admin.py**
+
+![blog admin.py check](/readme-images/blog-admin-check.png)
+
+**forms.py**
+
+![blog forms.py check](/readme-images/blog-forms-check.png)
+
+**models.py**
+
+![blog models.py check](/readme-images/blog-models-check.png)
+
+**urls.py**
+
+![blog urls.py check](/readme-images/blog-urls-check.png)
+
+**views.py**
+
+![blog views.py check](/readme-images/blog-views-check.png)
+
+### **rightrecovery app**
+
+**urls.py**
+
+![rightrecovery urls.py check](/readme-images/rr-urls-check.png)
+
+**settings.py**
+
+settings.py had 5 lines too long that I could not format any shorter. This had no effect on the application.
+
+![rightrecovery settings.py check](/readme-images/rr-settings-check.png)
+
+### **users app**
+
+**admin.py**
+
+![users admin.py check](/readme-images/users-admin-check.png)
+
+**apps.py**
+
+![users apps.py check](/readme-images/users-apps-check.png)
+
+**forms.py**
+
+![users forms.py check](/readme-images/users-forms-check.png)
+
+**models.py**
+
+![users models.py check](/readme-images/users-models-check.png)
+
+**signals.py**
+
+![users signals.py check](/readme-images/users-signals-check.png)
+
+**urls.py**
+
+urls.py had 1 line too long that I could not format any shorter. This had no effect on the application.
+
+![users urls.py check](/readme-images/users-urls-check.png)
+
+**views.py**
+
+![users views.py check](/readme-images/users-views-check.png)
+
 ### **Lighthouse Reports**
 
 **Feed**

@@ -3,12 +3,11 @@ from .models import PostModel
 from .forms import PostModelForm, PostUpdateForm, CommentForm
 from django.contrib.auth.decorators import login_required
 
-# Create your views here.
 
 # The home page view
-@login_required # Makes sure the user is logged in
+@login_required  # Makes sure the user is logged in
 def index(request):
-    posts = PostModel.objects.all() 
+    posts = PostModel.objects.all()
     if request.method == 'POST':
         form = PostModelForm(request.POST)
         if form.is_valid():
@@ -24,6 +23,7 @@ def index(request):
     }
 
     return render(request, 'blog/index.html', context)
+
 
 # The post detial view
 @login_required
@@ -45,6 +45,7 @@ def post_detail(request, pk):
     }
     return render(request, 'blog/post_detail.html', context)
 
+
 # The edit post view
 @login_required
 def post_edit(request, pk):
@@ -61,6 +62,7 @@ def post_edit(request, pk):
         'form': form,
     }
     return render(request, 'blog/post_edit.html', context)
+
 
 # The post delete view
 @login_required

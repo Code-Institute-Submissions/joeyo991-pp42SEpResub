@@ -3,11 +3,10 @@ from django.contrib.auth.forms import UserCreationForm
 from .forms import SignUpForm, UserUpdateForm, ProfileUpdateForm
 from django.contrib.auth.decorators import login_required
 
-# Create your views here.
 
 # User sign up
 def sign_up(request):
-    if request.method == 'POST': 
+    if request.method == 'POST':
         form = SignUpForm(request.POST)
         if form.is_valid():
             form.save()
@@ -19,14 +18,17 @@ def sign_up(request):
     }
     return render(request, 'users/sign_up.html', context)
 
+
 # The profile view
-@login_required # Makes sure user is logged in
+@login_required  # Makes sure user is logged in
 def profile(request):
     if request.method == 'POST':
         # User Update Form
         u_form = UserUpdateForm(request.POST or None, instance=request.user)
         # Profile Update Form
-        p_form = ProfileUpdateForm(request.POST or None, request.FILES or None, instance=request.user.profilemodel)
+        p_form = ProfileUpdateForm(
+            request.POST or None, request.FILES or None,
+            instance=request.user.profilemodel)
         if u_form.is_valid() and p_form.is_valid():
             u_form.save()
             p_form.save()
