@@ -309,6 +309,40 @@ urls.py had 1 line too long that I could not format any shorter. This had no eff
 
 ![Post Detail Page Lighthouse Report](/readme-images/post-lighthouse.png)
 
+### **Compatibility**
+
+Testing was conducted on the following browsers:
+- Chrome
+- Brave
+- Firefox
+
+The site worked and functioned as it should on all of the tested browsers.
+
+### **Responsiveness**
+
+The responsiveness was checked manually by using devtools (Chrome) throughout the whole development. It was also checked with [Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb/related?hl=en) Chrome extension.
+
+![Responsiveness test](/readme-images/responsiveness.png)
+
+The screens shown above (from left to right) are:
+- Large laptop 1440 x 900
+- iPhone 8/7/6 Plus
+- Galaxy S9/S8 Plus
+- iPad
+
+## **Bugs**
+The only majaor bug I came across was when I was deploying my project to heroku. When DEBUG was set to False, the page was showing up blank with a message that read: BAD REQUEST(400). This was because of a typo I had left in the base.html template when linking my CSS. Removing the / before the file name solved the problem.
+
+![Bad Request bug](/readme-images/bug.png)
+
+Before Fix:
+
+![Bug pre fix](/readme-images/bug-pre-fix.png)
+
+After Fix:
+
+![Bug post fix](/readme-images/bug-post-fix.png)
+
 ## **Deployment**
 
 ### **Heroku**
