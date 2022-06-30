@@ -201,11 +201,50 @@ I used the following image as a background for the Login and Sign Up pages as I 
 
 ![Background Image](/readme-images/rr-img.jpg)
 
+## **Testing**
+
+### **HTML Validation**
+
+- HTML validation was done by using the official [W3C](https://validator.w3.org/) validator. This checking was done manually by copying the view page source code (Ctrl+U) and pasting it into the validator.
+
+- All pages on the site returned back the same result:
+
+![HTML Validation Results](/readme-images/html-validation.png)
+
+### **CSS Validation**
+
+- No errors or warnings were found when passing through the official [W3C (Jigsaw)](https://jigsaw.w3.org/css-validator/#validate_by_uri) validator.
+
+![CSS Validation Results](/readme-images/css-validation.png)
+
+### **Lighthouse Reports**
+
+**Feed**
+
+![Feed Lighthouse Report](/readme-images/feed-lighthouse.png)
+
+**Login Page**
+
+![Login Page Lighthouse Report](/readme-images/login-lighthouse.png)
+
+**Sign Up Page**
+
+![Sign Up Page Lighthouse Report](/readme-images/signup-lighthouse.png)
+
+**Profile Page**
+
+![Profile Page Lighthouse Report](/readme-images/profile-lighthouse.png)
+
+**Post Detail Page**
+
+![Post Detail Page Lighthouse Report](/readme-images/post-lighthouse.png)
+
 ## **Deployment**
 
 ### **Heroku**
 
 The website is hosted on Heroku and can be accessed by visiting this [link](https://rightrecovery.herokuapp.com/).
+
 
 The process for deploying the website to Heroku is as follows:
 
