@@ -181,3 +181,26 @@ In the future it may be a good idea for users to have the option to delete a com
 
 ## **Design**
 
+The central theme of the site is simplicity of use. It is aimed to guide the user to the best experience.
+
+### **Colour Scheme**
+
+The main color scheme of the application is blue and white due to the trend in modern web design / social media sites.
+
+![Color Scheme](/readme-images/base-colors.png)
+
+### **Typography**
+
+Then main font used in the application is Segoe UI. The image below explains why I used this font.
+
+![Segoe UI Font](/readme-images/Segoe-UI-Font.png)
+
+### **Imagery**
+
+I used the following image as a background for the Login and Sign Up pages as I feel like the colors contrast well with the blue and white and also beacause it is a great visual representation of what recovery can be like with a little help, which I hope this site can be.
+
+![Background Image](/readme-images/rr-img.jpg)
+
+
+
+
