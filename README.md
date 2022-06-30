@@ -123,4 +123,15 @@ The post form appears to the left of the posts on the feed and allows the user t
 
 ![Post Form](/readme-images/post-form.png)
 
+**Posts**
+
+The Posts are viewed by clicking on a post from the feed. This let's the user see the full post, how many comments it has and also leave a comment. 
+
+![Post Detial](/readme-images/post-detail.png)
+
+**Comments**
+
+The user can expand the comments and view them by clicking on the blue comments link on the post.
+
+![Comments](/readme-images/comments.png)
 
