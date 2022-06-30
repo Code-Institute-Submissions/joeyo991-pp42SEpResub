@@ -125,7 +125,7 @@ The post form appears to the left of the posts on the feed and allows the user t
 
 **Posts**
 
-The Posts are viewed by clicking on a post from the feed. This let's the user see the full post, how many comments it has and also leave a comment. 
+The Posts are viewed by clicking on a post from the feed. This let's the user see the full post, how many comments it has and also leave a comment.
 
 ![Post Detial](/readme-images/post-detail.png)
 
@@ -134,4 +134,30 @@ The Posts are viewed by clicking on a post from the feed. This let's the user se
 The user can expand the comments and view them by clicking on the blue comments link on the post.
 
 ![Comments](/readme-images/comments.png)
+
+**Post Options**
+
+![Post Options](/readme-images/post-options.png)
+
+If the user clicks into one of their own posts, they will see two buttons:
+- Edit - Lets them edit their post.
+- Delete - Lets them delete their post.
+
+**Edit Post**
+
+Clicking the edit button allows the user to edit the title or the content of their post.
+
+![Edit Post](/readme-images/edit-post.png)
+
+**Delete Post**
+
+Clicking the delete button allows the user to delete their post if they wish to.
+
+![Delete Post](/readme-images/delete-post.png)
+
+**Logged out Page**
+
+When the user clicks the Logout button in the navbar, they are redirected to the logged out page. This page consists of a message letting them know they have been signed out and also provides a button to bring them back to the log in page.
+
+![Logged Out Page](/readme-images/logged-out.png)
 

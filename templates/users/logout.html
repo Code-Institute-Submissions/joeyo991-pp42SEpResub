@@ -3,17 +3,21 @@
 {% load crispy_forms_tags %}
 {% block content %}
 <!-- Logout Page -->
-<div class="container">
-    <div class="row mt-5 pt-3">
-        <div class="col-md-6 offset-md-3">
-            <div class="card my-3 shadow">
-                <div class="card-body">
-                    <h4>Logout?</h4>
-                    <hr>
-                    <div class="alert alert-info">
-                        You have been Logged Out!
+<div class="cover">
+    <div class="container">
+        <div class="row mt-5 pt-3">
+            <div class="col-md-6 offset-md-3">
+                <div class="card my-3 shadow">
+                    <div class="card-body">
+                        <h4>Logged Out</h4>
+                        <hr>
+                        <div class="alert alert-info">
+                            You have been Logged Out!
+                        </div>
+                        <div class="text-center">
+                            <a class="btn btn-primary btn-sm" href="{% url 'users-login' %}">Login</a>
+                        </div>
                     </div>
-                    <a class="btn btn-primary btn-sm" href="{% url 'users-login' %}">Login</a>
                 </div>
             </div>
         </div>
