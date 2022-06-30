@@ -34,5 +34,93 @@ People in recovery from addiction or mental health problems.
 - As a frequent visitor, I want to be able to comment on other users' posts.
 - As a frequent visitor, I want to be abale to view the comments on mine and other users' posts.
 
+## **Technologies Used**
+### **Languages:**
+- [Python](https://www.python.org/downloads/release/python-385/): the primary language used to develop the server-side of the website.
+- [JS](https://www.javascript.com/): the primary language used to develop interactive components of the website.
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML): the markup language used to create the website.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/css): the styling language used to style the website.
+
+### **Frameworks and Libraries:**
+- [Django](https://www.djangoproject.com/): python framework used to create all the backend logic of the website.
+- [Bootstrap](https://getbootstrap.com/): HTML and CSS templates used throughout the site.
+
+### **Databases**
+- [SQLite](https://www.sqlite.org/): was used as a database during the development stage of the website.
+- [PostgreSQL](https://www.postgresql.org/): the database used to store all the data.
+
+### **Other tools**
+- [Git](https://git-scm.com/): the version control system used to manage the code.
+- [Pip3](https://pypi.org/project/pip/): the package manager used to install the dependencies.
+- [Cloudinary](https://cloudinary.com/): the image hosting service used to upload images and other media.
+- [Psycopg2](https://www.python.org/dev/peps/pep-0249/): the database driver used to connect to the database.
+- [Django-allauth](https://django-allauth.readthedocs.io/en/latest/): the authentication library used to create the user accounts.
+- [Heroku](https://dashboard.heroku.com/): the hosting service used to host the website.
+- [GitHub](https://github.com/): used to host the website's source code.
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/open/): was used to debug the website.
+- [Font Awesome](https://fontawesome.com/): was used to create the icons used in the website.
+- [W3C Validator](https://validator.w3.org/): was used to validate HTML5 code for the website.
+- [W3C CSS validator](https://jigsaw.w3.org/css-validator/): was used to validate CSS code for the website.
+- [PEP8](https://pep8.org/): was used to validate Python code for the website.
+
+## **Features**
+
+**Sign Up Page**
+
+The sign up page features a form where the user enters their username, email and confirms a password.
+
+![Sign Up Page](/readme-images/sign-up.png)
+
+**Login Page**
+
+When the user is logged out, the website will display display a login page with a login form, login button and a 'create account' button.
+
+![Login Page](/readme-images/login-page.png)
+
+When the user logs in, they are redirected to the feed page.
+
+**Navbar**
+
+The navbar is located at the top of the screen. When the user is logged out, the navbar contains:
+- The name of the site - redirects to the login page.
+- A Sign Up button - redirects to the sign up page.
+- A Login button - redirects to the login page.
+
+![Navbar signed out](/readme-images/navbar-out.png)
+
+When the user is signed in, the navbar contains:
+- A profile button - redirects to the user's profile.
+- A Home button - redirects to the feed page.
+- A Logout button - redirects to the logged out page.
+
+![Navbar signed in](/readme-images/navbar-in.png)
+
+On  a mobile, the navbar buttons are condensed into a dropdown.
+
+![Navbar mobile](/readme-images/navbar-mobile.png)
+
+**Profile Page**
+
+This page has a container where the user can see their information and their picture. They can also edit this information via modal that is triggered by clicking the edit profile button. The user's profile is only viewable by themself to allow the site to remain anonymous.
+
+![Profile](/readme-images/profile.png)
+
+**Edit Profile Modal**
+
+This modal allows the user to change their username, email address and their profile picture.
+
+![Edit Profile](/readme-images/edit-profile.png)
+
+**The Feed**
+
+This is where all the posts are displayed whenever they are created by a user.
+
+![Feed](/readme-images/feed.png)
+
+**Post Form**
+
+The post form appears to the left of the posts on the feed and allows the user to create a post. The post needs a title and then some content.
+
+![Post Form](/readme-images/post-form.png)
 
 
