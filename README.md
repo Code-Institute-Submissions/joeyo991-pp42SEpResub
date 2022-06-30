@@ -201,6 +201,78 @@ I used the following image as a background for the Login and Sign Up pages as I 
 
 ![Background Image](/readme-images/rr-img.jpg)
 
+## **Deployment**
 
+### **Heroku**
 
+The website is hosted on Heroku and can be accessed by visiting this [link](https://rightrecovery.herokuapp.com/).
 
+The process for deploying the website to Heroku is as follows:
+
+1. Create a Heroku account if you don't already have one.
+
+2. Create a new app on Heroku.
+
+    1. Go to the [Heroku dashboard](https://dashboard.heroku.com/apps).
+    2. Click on the "New" button.
+    3. Click on the "Create new app" button.
+    4. Choose a name for your app.
+    5. Choose a region.
+    6. Click on the "Create app" button.
+
+3. In your app go to the "Resources" tab.
+
+    - Add a Heroku Postgres database.
+
+4. In your app go to the "Settings" tab, press "Reveal Config Vars", and add the following config vars if they are not already set:
+
+    1. ```CLOUDINARY_URL``` = your cloudinary URL
+    2. ```DATABASE_URL``` = the url of your heroku postgres database.
+    3. ```SECRET_KEY``` = a secret key for your app.
+    4. ```PORT``` = 8000
+    11. ```DISABLE_COLLECTSTATIC``` = 1 during development. Remove this when deploying to production.
+
+5. In your app go to the "Deploy" tab.
+
+    1. If it's already possible, connect your Heroku account to your GitHub account and then click on the "Deploy" button.
+    2. If not, you need to copy the Heroku CLI command to connect your heroku app and your local repository.
+
+        - ```heroku git:remote -a <your-heroku-app-name>```
+
+6. Go to your local repository.
+
+7. Login to your Heroku account in your terminal and connect your local repository to your heroku app.
+
+    1. ```heroku login -i``` - Enter all your Heroku credentials it will ask for.
+    2. Paste the command you copied from step 5 into your terminal.
+
+8. Create Procfile.
+
+    For this project I used gunicorn, so in my case I had the following Procfile:
+    - ```web: gunicorn rightrecovery.wsgi``` - This runs the app on heroku.
+
+9. Create ```requirements.txt```. This can be done by running the following command:
+
+    - ```pip freeze --local > requirements.txt```
+
+10. Add and commit all changes.
+
+11. Push your changes to Heroku.
+
+    - ```git push heroku master```
+    or
+    - ```git push heroku main```
+
+12. Check the logs of your app in heroku dashboard and make sure everything is working.
+
+## **Credits**
+- [Django](https://www.djangoproject.com/) for the framework.
+- [Bootstrap](https://getbootstrap.com/): for the templates.
+- [Django-allauth](https://django-allauth.readthedocs.io/) for the authentication library.
+- [Font awesome](https://fontawesome.com/): for the free access to icons.
+- [Heroku](https://www.heroku.com/): for the free hosting of the website.
+- [Cloudinary](https://cloudinary.com/): for the free access to the image hosting service.
+- [Coolors](https://coolors.co/): for providing a free platform to generate your own palette.
+- [Postgresql](https://www.postgresql.org/): for providing a free database.
+- [Google Fonts](https://fonts.google.com/): for providing a free platform to use Google Fonts.
+- [KenBroTech](https://www.youtube.com/c/KenBroTech): for the django and python tutorial videos.
