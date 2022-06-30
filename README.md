@@ -438,4 +438,4 @@ The process for deploying the website to Heroku is as follows:
 - [Coolors](https://coolors.co/): for providing a free platform to generate your own palette.
 - [Postgresql](https://www.postgresql.org/): for providing a free database.
 - [Google Fonts](https://fonts.google.com/): for providing a free platform to use Google Fonts.
-- [KenBroTech](https://www.youtube.com/c/KenBroTech): for the django and python tutorial videos.
+- [KenBroTech](https://www.youtube.com/c/KenBroTech): for the django blog app tutorial I watched and based my project on and the python tutorial videos.
