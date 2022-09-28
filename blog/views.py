@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 from .models import PostModel
 from .forms import PostModelForm, PostUpdateForm, CommentForm
-from django.contrib import messages
+
 
 # The home page view
 @login_required  # Makes sure the user is logged in
