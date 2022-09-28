@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
-from .forms import SignUpForm, UserUpdateForm, ProfileUpdateForm
 from django.contrib.auth.decorators import login_required
+from .forms import SignUpForm, UserUpdateForm, ProfileUpdateForm
+from django.contrib import messages
 
 
 # User sign up
@@ -10,6 +11,7 @@ def sign_up(request):
         form = SignUpForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Account created successfully!')
             return redirect('users-login')
     else:
         form = SignUpForm()
@@ -32,6 +34,7 @@ def profile(request):
         if u_form.is_valid() and p_form.is_valid():
             u_form.save()
             p_form.save()
+            messages.success(request, 'Account updated successfully!')
             return redirect('users-profile')
     else:
         u_form = UserUpdateForm(instance=request.user)
