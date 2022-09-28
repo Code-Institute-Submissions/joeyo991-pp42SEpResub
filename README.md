@@ -31,6 +31,7 @@ People in recovery from addiction or mental health problems.
 - As a frequent visitor, I want to be able to update my personal data so that I can keep my account up to date.
 - As a frequent visitor, I want to be able to update my picture on the app.
 - As a frequent visitor, I want to be able to upload a post.
+- As a frequent visitor, I want to be able to edit/delete a post.
 - As a frequent visitor, I want to be able to comment on other users' posts.
 - As a frequent visitor, I want to be able to view the comments on mine and other users' posts.
 
@@ -220,6 +221,7 @@ I used the following image as a background for the Login and Sign Up pages as I 
 | As a frequent visitor, I want to be able to update my personal data so that I can keep my account up to date. | Yes |
 | As a frequent visitor, I want to be able to update my picture on the app. | Yes |
 | As a frequent visitor, I want to be able to upload a post. | Yes |
+| As a frequent visitor, I want to be able to edit/delete a post. | Yes|
 | As a frequent visitor, I want to be able to comment on other users' posts. | Yes |
 | As a frequent visitor, I want to be able to view the comments on mine and other users' posts. | Yes |
 
